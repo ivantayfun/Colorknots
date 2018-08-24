@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<ListPreference
+        android:entries="@array/otvetu"
+        android:entryValues="@array/otvetu_values"
+        android:key="otvetu"
+        android:summary="@string/otvetu_opicanie"
+        android:title="@string/otvetu">
+    </ListPreference>-->
+    <EditTextPreference
+        android:defaultValue="450"
+        android:key="edit_text_cenakos_3_120"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:inputType="number"
+        android:title="Цена три косы 120" />
+    <EditTextPreference
+        android:defaultValue="600"
+        android:key="edit_text_cenakos_3_180"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:inputType="number"
+        android:title="Цена три косы 180" />
+    <EditTextPreference
+        android:defaultValue="750"
+        android:key="edit_text_cenakos_3_240"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:inputType="number"
+        android:title="Цена три косы 240" />
+    <EditTextPreference
+        android:defaultValue="1175"
+        android:key="edit_text_cenakos_3_360"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:inputType="number"
+        android:title="Цена три косы 360" />
+    <EditTextPreference
+        android:defaultValue="540"
+        android:key="edit_text_cenakos_4_120"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:inputType="number"
+        android:title="Цена четыре косы 120" />
+    <EditTextPreference
+        android:defaultValue="740"
+        android:key="edit_text_cenakos_4_180"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:inputType="number"
+        android:title="Цена четыре косы 180" />
+    <EditTextPreference
+        android:defaultValue="1090"
+        android:key="edit_text_cenakos_4_240"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:inputType="number"
+        android:title="Цена четыре косы 240" />
+    <EditTextPreference
+        android:defaultValue="1490"
+        android:key="edit_text_cenakos_4_360"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:inputType="number"
+        android:title="Цена четыре косы 360" />
+</PreferenceScreen>
