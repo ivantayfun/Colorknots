@@ -10,12 +10,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-
 import java.text.DecimalFormat;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-
 
 public class CenacosRound extends AppCompatActivity {
     EditText editText_trybok_v_kose;
@@ -35,7 +32,7 @@ public class CenacosRound extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cenacosround);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         dlina_blije_k_vbIbr_kose = 1;
@@ -169,9 +166,6 @@ public class CenacosRound extends AppCompatActivity {
         int id = item.getItemId();
 
         switch (id) {
-            /*case R.id.menu_cena_kos:
-                cenakosfynk();
-                break;*/
             case R.id.nastroiki:
                 nastroikifynk();
                 break;
@@ -195,10 +189,5 @@ public class CenacosRound extends AppCompatActivity {
         finish();
 
     }
-    //ЗАПУСК АКТИВИТИ НАСТРОЙКИ
-    /*private void cenakosfynk() {
-        Intent intent = new Intent(this, CenakosActivity.class);
-        startActivity(intent);
-        finish();
-    }*/
+
 }
