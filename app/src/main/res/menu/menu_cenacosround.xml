@@ -7,10 +7,10 @@
          android:orderInCategory="100"
          android:title="Цена кос"
          app:showAsAction="never" />-->
-    <item
+    <!--<item
         android:id="@+id/nastroiki"
         android:orderInCategory="100"
-        android:title="НАСТРОЙКИ" />
+        android:title="НАСТРОЙКИ" />-->
     <item
         android:id="@+id/glavnaya"
         android:orderInCategory="100"
