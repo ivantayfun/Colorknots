@@ -83,6 +83,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.cenacos_raund:
                 cenacosroundfynk();
                 break;
+                case R.id.foto_tkanb:
+                cenacosroundfynk();
+                break;
         }
         return super.onOptionsItemSelected(item);
     }
@@ -91,7 +94,10 @@ public class MainActivity extends AppCompatActivity {
 //        Intent intent = new Intent(this, PrefActivity.class);
 //        startActivity(intent);
 //    }
-    private void cenacosroundfynk() {
+    private void fototkanbfynk() {
+        Intent intent = new Intent(this, FotoActivity.class);
+        startActivity(intent);
+    }private void cenacosroundfynk() {
         Intent intent = new Intent(this, CenacosRound.class);
         startActivity(intent);
     }

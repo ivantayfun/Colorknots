@@ -12,6 +12,10 @@
         android:orderInCategory="100"
         android:title="НАСТРОЙКИ" />-->
     <item
+        android:id="@+id/foto_tkanb"
+        android:orderInCategory="100"
+        android:title="ФОТО ТКАНЬ" />
+    <item
         android:id="@+id/cenacos_raund"
         android:orderInCategory="100"
         android:title="КРУГЛАЯ КРОВАТКА" />
