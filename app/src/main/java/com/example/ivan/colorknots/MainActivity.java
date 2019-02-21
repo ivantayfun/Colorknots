@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
                 cenacosroundfynk();
                 break;
                 case R.id.foto_tkanb:
-                cenacosroundfynk();
+                    fototkanbfynk();
                 break;
         }
         return super.onOptionsItemSelected(item);
