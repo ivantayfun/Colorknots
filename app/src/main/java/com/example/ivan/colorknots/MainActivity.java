@@ -1,9 +1,7 @@
 package com.example.ivan.colorknots;
 
 import android.content.Intent;
-//import android.content.SharedPreferences;
 import android.os.Bundle;
-//import android.preference.PreferenceManager;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -18,12 +16,11 @@ public class MainActivity extends AppCompatActivity {
     private EditText editText_trybok_v_kose;
     private EditText editText_dlina_kosbI;
     private EditText editText_skidka;
-    int dlina_blije_k_vbIbr_kose;
-    double osnovanie;
-    double chislo;
-    double ccc;
-    double skidka;
-    double skidka_rezylbtat;
+    private double osnovanie;
+    private double chislo;
+    private double ccc;
+    private double skidka;
+    private double skidka_rezylbtat;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        dlina_blije_k_vbIbr_kose = 1;
         Button tvName =  findViewById(R.id.button2);
         editText_trybok_v_kose =  findViewById(R.id.editText_trybok_v_kose);
         editText_dlina_kosbI =  findViewById(R.id.editText_dlina_kosbI);
@@ -50,7 +46,6 @@ public class MainActivity extends AppCompatActivity {
                     if (!editText_skidka.getText().toString().equals("")){
                         skidka = Integer.parseInt(editText_skidka.getText().toString());
                     }
-
                     chislo = Integer.parseInt(editText_dlina_kosbI.getText().toString())*Integer.parseInt(editText_trybok_v_kose.getText().toString());
                     osnovanie = 5008;
                     ccc = (2.48178 - Math.log(chislo*100)/Math.log(osnovanie))*chislo;
@@ -61,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
                     String ggg1 = new DecimalFormat("#0.00").format(skidka_rezylbtat) + " грн";
                     TextView textView_skidka =  findViewById(R.id.textView_skidka_rezylbtat);
                     textView_skidka.setText(ggg1);
-
             }
         });
     }
@@ -79,7 +73,6 @@ public class MainActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
         switch (id) {
-
             case R.id.cenacos_raund:
                 cenacosroundfynk();
                 break;
@@ -101,8 +94,4 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, CenacosRound.class);
         startActivity(intent);
     }
-    /*private void fotocosfynk() {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-    }*/
 }

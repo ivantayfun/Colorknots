@@ -2,15 +2,14 @@ package com.example.ivan.colorknots;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
-
-//import com.example.myapplication.R;
-
-public class PrefActivity extends PreferenceActivity {
-
+public class PrefActivity extends PreferenceActivity
+{
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.pref);
-
+        getFragmentManager().beginTransaction().replace(android.R.id.content, new MyPreferenceFragment()).commit();
     }
+
+
 }
