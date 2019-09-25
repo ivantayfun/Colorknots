@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private double ccc;
     private double skidka;
     private double skidka_rezylbtat;
-    private int git_hub;
+    private int git_hub2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
